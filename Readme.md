@@ -44,53 +44,55 @@ The project is built using:
 
 ---
 
-# Project Structure
+## Project Structure
+
+```
 account-management-system
 │
 ├── frontend
-│ ├── components
-│ │ ├── Sidebar.jsx
-│ │ └── ProtectedRoute.jsx
-│ │
-│ ├── context
-│ │ └── AuthContext.jsx
-│ │
-│ ├── layout
-│ │ └── DashboardLayout.jsx
-│ │
-│ ├── pages
-│ │ ├── Login.jsx
-│ │ ├── Signup.jsx
-│ │ ├── Dashboard.jsx
-│ │ ├── SendMoney.jsx
-│ │ └── Statement.jsx
-│ │
-│ ├── services
-│ │ └── api.js
-│ │
-│ ├── App.jsx
-│ └── main.jsx
+│   ├── components
+│   │   ├── Sidebar.jsx
+│   │   └── ProtectedRoute.jsx
+│   │
+│   ├── context
+│   │   └── AuthContext.jsx
+│   │
+│   ├── layout
+│   │   └── DashboardLayout.jsx
+│   │
+│   ├── pages
+│   │   ├── Login.jsx
+│   │   ├── Signup.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── SendMoney.jsx
+│   │   └── Statement.jsx
+│   │
+│   ├── services
+│   │   └── api.js
+│   │
+│   ├── App.jsx
+│   └── main.jsx
 │
 └── backend
-├── controllers
-│ ├── authController.js
-│ └── accountController.js
-│
-├── routes
-│ ├── authRoutes.js
-│ └── accountRoutes.js
-│
-├── middlewares
-│ └── authMiddleware.js
-│
-├── config
-│ └── supabaseClient.js
-│
-├── utils
-│ └── generateToken.js
-│
-└── server.js
-
+    ├── controllers
+    │   ├── authController.js
+    │   └── accountController.js
+    │
+    ├── routes
+    │   ├── authRoutes.js
+    │   └── accountRoutes.js
+    │
+    ├── middlewares
+    │   └── authMiddleware.js
+    │
+    ├── config
+    │   └── supabaseClient.js
+    │
+    ├── utils
+    │   └── generateToken.js
+    │
+    └── server.js
+```
 
 ---
 
