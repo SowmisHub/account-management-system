@@ -1,17 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
+import SendMoney from "./pages/SendMoney";
+import Statement from "./pages/Statement";
+import ProtectedRoute from "./components/ProtectedRoute";
 
-  return (
-    <>
-      <h1 className='text-4xl text-blue-600 font-bold'>Tailwind working</h1>
-    </>
-  )
+export default function App(){
+
+return(
+
+<BrowserRouter>
+
+<Routes>
+
+<Route path="/" element={<Login/>} />
+<Route path="/signup" element={<Signup/>} />
+
+<Route path="/dashboard"
+element={<ProtectedRoute><Dashboard/></ProtectedRoute>}
+/>
+
+<Route path="/send"
+element={<ProtectedRoute><SendMoney/></ProtectedRoute>}
+/>
+
+<Route path="/statement"
+element={<ProtectedRoute><Statement/></ProtectedRoute>}
+/>
+
+</Routes>
+
+</BrowserRouter>
+
+);
+
 }
-
-export default App
